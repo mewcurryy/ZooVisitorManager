@@ -35,6 +35,14 @@ public class Main {
 		}while(input != 3);
 	}
 	
+	void fillVisitor() {
+		visitorVec.add(new Visitor("Ali", "c1", 30.0, null));
+		visitorVec.add(new Member("Budi", "c2", 20.0, null, 0));
+		visitorVec.add(new Member("Cici", "c3", 30.0, null, 0));
+		visitorVec.add(new Member("Dona", "c4", 40.0, null, 0));
+		visitorVec.add(new Member("Edan", "c5", 30.0, null, 9));
+	}
+	
 	void displayAll() {
 		for (Visitor visitor : visitorVec) {
 			if(visitor instanceof Member) {
