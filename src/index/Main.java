@@ -86,6 +86,9 @@ public class Main {
 						visitor.setBalance(visitor.getBalance() + 10.0);
 					}
 				}
+				String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+				visitor.getVisit().add(days[day-1]);
+				for(int i = 0; i < 6; i++) System.out.println("");
 				return;
 			}
 			
